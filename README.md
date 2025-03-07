@@ -16,10 +16,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Various Network Protocols: SSH, RDP, DNS, HTTP/S, ICMP, DHCP
 
 
+
+
 <h2>Operating Systems Used </h2>
 
 - Windows 10 (21H2) (Virtual Machine on Azure)
 - Ubuntu Server 20.04 (Virtual Machine on Azure)
+
+
+
 
 <h2>High-Level Steps</h2>
 
@@ -29,9 +34,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Clean up resources to avoid unnecessary charges.
 
 
+
+
+
+
 <h2>Actions and Observations</h2>
 
+<h3>Part 1: Creating Virtual Machines</h3>
 <br />
+
 <p>
 Log into the Azure Portal and navigate to "Resource Groups." Click "Create," enter a name and region, then select "Review + Create" to finalize the resource group. 
 </p>
@@ -57,7 +68,6 @@ Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicki
 ![Screenshot 2025-03-06 185705](https://github.com/user-attachments/assets/5475cb14-60cd-4b5c-aaa1-2580fb499a57)
 <br />
 
-
 <p>
 Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensuring it uses the same Resource Group and Virtual Network as the Windows 10 VM. Configure authentication with the same username and password used for the Windows 10 Virtual Machine, and confirm that both VMs are within the same Virtual Network and Subnet.
 </p>
@@ -75,7 +85,33 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 ![Screenshot 2025-03-06 190524](https://github.com/user-attachments/assets/0fb823fa-2ed1-4805-b1f0-d820640683a0)
 <br />
 
+<h3>Part 2: Observing ICMP Traffic</h3>
+<br/>
 
+<p>Access the Windows 10 Virtual Machine using Remote Desktop. Once inside, install and launch Wireshark. Start a packet capture and filter for ICMP traffic.</p>
+<br />
 
+<p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM, observing the requests and replies in Wireshark. Then, open the command line or PowerShell on the Windows VM and ping a public website such as www.google.com, monitoring the ICMP traffic within Wireshark.</p>
+<br />
+
+<h3>Part 3: Configuring a Firewall (Network Security Group)</h3>
+<br />
+
+<p>Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM. Navigate to the Network Security Group associated with the Ubuntu VM and disable inbound ICMP traffic.</p>
+<br />
+
+<p>Back in the Windows VM, observe how the ping fails and how this change is reflected in Wireshark. Re-enable ICMP traffic in the Network Security Group and confirm that the ping resumes successfully in both the command line and Wireshark.</p>
+<br />
+
+<p>Next, start a new Wireshark packet capture and filter for SSH traffic. From the Windows VM, initiate an SSH connection to the Ubuntu VM using its private IP address. Enter the necessary login credentials and observe the SSH traffic in Wireshark. After testing, exit the SSH session.</p>
+<br />
+
+<p>Similarly, filter for DHCP traffic and renew the Windows VM’s IP address using the "ipconfig /renew" command in PowerShell, watching the DHCP requests and responses in Wireshark. Then, filter for DNS traffic and use the "nslookup" command to query domain names like "google.com" and "disney.com," observing the DNS requests and responses in Wireshark. Finally, filter for RDP traffic and note the continuous data flow, as the protocol constantly transmits display updates between machines.</p>
+<br />
+
+<h3>Lab Cleanup</h3>
+<br />
+
+<p>Close the Remote Desktop connection to the Windows VM. In the Azure portal, delete the Resource Group that was created at the beginning of the lab. Ensure that all associated resources are removed by verifying the Resource Group deletion.</p>
 
 
