@@ -139,10 +139,43 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <h3>Part 4: Observing Traffic Between Azure Virtual Machines</h3>
 <br />
 
-<p>Next, start a new Wireshark packet capture and filter for SSH traffic. From the Windows VM, initiate an SSH connection to the Ubuntu VM using its private IP address. Enter the necessary login credentials and observe the SSH traffic in Wireshark. After testing, exit the SSH session.</p>
+<p>Next, start a new Wireshark packet capture and filter for SSH traffic.</p>
 <br />
 
-<p>Similarly, filter for DHCP traffic and renew the Windows VM’s IP address using the "ipconfig /renew" command in PowerShell, watching the DHCP requests and responses in Wireshark. Then, filter for DNS traffic and use the "nslookup" command to query domain names like "google.com" and "disney.com," observing the DNS requests and responses in Wireshark. Finally, filter for RDP traffic and note the continuous data flow, as the protocol constantly transmits display updates between machines.</p>
+![image](https://github.com/user-attachments/assets/ef267494-f5b3-401c-be19-c8ebff072247)
+<br />
+  
+<p>From the Windows VM, initiate an SSH connection to the Ubuntu VM using its private IP address. Enter the necessary login credentials and observe the SSH traffic in Wireshark. After testing, exit the SSH session.</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/edd76c2b-4fda-43fe-a566-294fb06f5ab0)
+<br />
+
+![image](https://github.com/user-attachments/assets/7022e319-58c8-4b9d-81ec-8418fbfaf829)
+<br />
+
+<p>Similarly, filter for DHCP traffic and renew the Windows VM’s IP address using the "ipconfig /renew" command in PowerShell, watching the DHCP requests and responses in Wireshark.</p> 
+<br />
+
+![image](https://github.com/user-attachments/assets/720f745c-e6ad-490a-a830-cac1f35a184e)
+<br />
+
+![image](https://github.com/user-attachments/assets/212f0be8-10ed-4992-b1fb-92dca78dbac6)
+<br />
+
+<p>Then, filter for DNS traffic and use the "nslookup" command to query domain names like "google.com" and "disney.com," observing the DNS requests and responses in Wireshark.</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/f75c5004-87dc-4332-8096-cec6e862c035)
+<br />
+
+![image](https://github.com/user-attachments/assets/5505e7ba-83ac-4b2a-9508-9f0b993b7d32)
+<br />
+
+<p>Finally, filter for RDP traffic (tcp.port == 3389) and note the continuous data flow, as the protocol constantly transmits display updates between machines.</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/f4d77d33-dddf-4c14-b2dd-59f9c01bfd56)
 <br />
 
 <h3>Lab Cleanup</h3>
