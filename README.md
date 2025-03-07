@@ -10,23 +10,24 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Environments and Technologies Used</h2>
 
-- Microsoft Azure (Virtual Machines/Compute)
-- Remote Desktop
-- Various Command-Line Tools
-- Various Network Protocols (SSH, RDH, DNS, HTTP/S, ICMP)
-- Wireshark (Protocol Analyzer)
+- Cloud Provider: Microsoft Azure
+- Tools: Wireshark, Remote Desktop, PowerShell, Command Prompt
+- Network Services: Virtual Network (VNet), Subnet, Network Security Group (NSG)
+- Various Network Protocols: SSH, RDP, DNS, HTTP/S, ICMP, DHCP
+
 
 <h2>Operating Systems Used </h2>
 
-- Windows 10 (21H2)
-- Ubuntu Server 20.04
+- Windows 10 (21H2) (Virtual Machine on Azure)
+- Ubuntu Server 20.04 (Virtual Machine on Azure)
 
 <h2>High-Level Steps</h2>
 
-- Step 1
-- Step 2
-- Step 3
-- Step 4
+- Create Azure Virtual Machines (Windows 10 and Ubuntu) within the same Virtual Network.
+- Observe network traffic using Wireshark while testing ICMP, SSH, DHCP, DNS, and RDP protocols.
+- Configure a Network Security Group to block and allow specific network traffic.
+- Clean up resources to avoid unnecessary charges.
+
 
 <h2>Actions and Observations</h2>
 
