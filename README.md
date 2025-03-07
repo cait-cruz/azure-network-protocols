@@ -13,7 +13,7 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 - Cloud Provider: Microsoft Azure
 - Tools: Wireshark, Remote Desktop, PowerShell, Command Prompt
 - Network Services: Virtual Network (VNet), Subnet, Network Security Group (NSG)
-- Various Network Protocols: SSH, RDP, DNS, HTTP/S, ICMP, DHCP
+- Various Network Protocols: SSH, RDP, DNS, ICMP, DHCP
 
 
 
