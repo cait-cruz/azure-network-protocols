@@ -59,8 +59,23 @@ Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicki
 
 
 <p>
-Then, create a Linux (Ubuntu) Virtual Machine, ensuring it uses the same Resource Group and Virtual Network as the Windows 10 VM. Configure authentication with the same username and password used for the Windows 10 Virtual Machine, and confirm that both VMs are within the same Virtual Network and Subnet.
+Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensuring it uses the same Resource Group and Virtual Network as the Windows 10 VM. Configure authentication with the same username and password used for the Windows 10 Virtual Machine, and confirm that both VMs are within the same Virtual Network and Subnet.
 </p>
 <br />
+
+![Screenshot 2025-03-06 190305](https://github.com/user-attachments/assets/00ac9c54-5e44-41c2-9960-71d94b9b7807)
+<br />
+
+![Screenshot 2025-03-06 190318](https://github.com/user-attachments/assets/5c3f126d-2ffd-4c10-a47a-0fceb85872f9)
+<br />
+
+![Screenshot 2025-03-06 190330](https://github.com/user-attachments/assets/7e7d65d2-986a-4470-be24-87308236771d)
+<br />
+
+![Screenshot 2025-03-06 190524](https://github.com/user-attachments/assets/0fb823fa-2ed1-4805-b1f0-d820640683a0)
+<br />
+
+
+
 
 
