@@ -84,6 +84,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 ![Screenshot 2025-03-06 190524](https://github.com/user-attachments/assets/0fb823fa-2ed1-4805-b1f0-d820640683a0)
 <br />
+<br />
 
 <h3>Part 2: Observing ICMP Traffic</h3>
 <br/>
@@ -101,6 +102,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <br />
 
 ![image](https://github.com/user-attachments/assets/15b86270-bad8-46e7-a11a-218771f42df8)
+<br />
 <br />
 
 <h3>Part 3: Configuring a Firewall (Network Security Group)</h3>
@@ -131,6 +133,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <br />
 
 ![image](https://github.com/user-attachments/assets/7aa0e25b-10bf-4fcf-bcf2-5a3199bca2e8)
+<br />
 <br />
 
 <h3>Part 4: Observing Traffic Between Azure Virtual Machines</h3>
