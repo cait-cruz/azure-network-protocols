@@ -106,10 +106,34 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <h3>Part 3: Configuring a Firewall (Network Security Group)</h3>
 <br />
 
-<p>Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM. Navigate to the Network Security Group associated with the Ubuntu VM and disable inbound ICMP traffic.</p>
+<p>Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.</p>
 <br />
 
-<p>Back in the Windows VM, observe how the ping fails and how this change is reflected in Wireshark. Re-enable ICMP traffic in the Network Security Group and confirm that the ping resumes successfully in both the command line and Wireshark.</p>
+![image](https://github.com/user-attachments/assets/b3a94a0f-a443-4c6b-9d6f-c0567b5c6ca4)
+<br />
+
+<p>Navigate to the Network Security Group associated with the Ubuntu VM and disable inbound ICMP traffic.</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/41fe5c38-d8ba-4bec-b884-b551b35ec27f)
+<br />
+
+<p>Back in the Windows VM, observe how the ping fails and how this change is reflected in Wireshark.</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/2b8b8988-ec0b-48c8-8bab-46a2baa30d98)
+<br />
+  
+<p>Re-enable ICMP traffic in the Linux VM Network Security Group and confirm that the ping resumes successfully in both the command line and Wireshark.</p>
+<br />
+
+![image](https://github.com/user-attachments/assets/fe83fe27-3fb2-4a29-89e5-3024376cfb30)
+<br />
+
+![image](https://github.com/user-attachments/assets/7aa0e25b-10bf-4fcf-bcf2-5a3199bca2e8)
+<br />
+
+<h3>Part 4: Observing Traffic Between Azure Virtual Machines</h3>
 <br />
 
 <p>Next, start a new Wireshark packet capture and filter for SSH traffic. From the Windows VM, initiate an SSH connection to the Ubuntu VM using its private IP address. Enter the necessary login credentials and observe the SSH traffic in Wireshark. After testing, exit the SSH session.</p>
