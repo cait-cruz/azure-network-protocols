@@ -94,10 +94,13 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 ![image](https://github.com/user-attachments/assets/85f8c859-9ca3-4192-b2f3-e9d312388d53)
 <br />
 
+![image](https://github.com/user-attachments/assets/5b631ec1-08db-4bb6-8c99-a2605f319576)
+<br />
 
+<p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM, observing the requests and replies in Wireshark.</p>
+<br />
 
-
-<p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM, observing the requests and replies in Wireshark. Then, open the command line or PowerShell on the Windows VM and ping a public website such as www.google.com, monitoring the ICMP traffic within Wireshark.</p>
+![image](https://github.com/user-attachments/assets/15b86270-bad8-46e7-a11a-218771f42df8)
 <br />
 
 <h3>Part 3: Configuring a Firewall (Network Security Group)</h3>
