@@ -91,6 +91,8 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <p>Access the Windows 10 Virtual Machine using Remote Desktop. Once inside, install and launch Wireshark. Start a packet capture and filter for ICMP traffic.</p>
 <br />
 
+![image](https://github.com/user-attachments/assets/85f8c859-9ca3-4192-b2f3-e9d312388d53)
+<br />
 
 
 
