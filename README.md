@@ -41,10 +41,23 @@ Log into the Azure Portal and navigate to "Resource Groups." Click "Create," ent
 <br />
 
 <p>
-Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicking "Create," and selecting "Windows 10." Assign the previously created Resource Group and allow Azure to generate a new Virtual Network (Vnet) and Subnet. Set up authentication using a username and password. 
+Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicking "Create," and selecting "Windows 10 Pro, Version 22H2," with the size of "Standard_D2s_v3 - 2vcpus." Assign the previously created Resource Group and create a new Virtual Network (Vnet) and Subnet. Set up authentication using a username and password. 
 </p>
 <br />
-  
+
+![Screenshot 2025-03-06 184220](https://github.com/user-attachments/assets/0a36de63-3e74-44ae-81f6-d2264db4cb46)
+<br />
+
+![Screenshot 2025-03-06 184242](https://github.com/user-attachments/assets/7de32a8c-7788-4b83-981c-4f726fe5e3e0)
+<br />
+
+![Screenshot 2025-03-06 185036](https://github.com/user-attachments/assets/24520442-fa18-4a3e-8daa-c7364112f0f7)
+<br />
+
+![Screenshot 2025-03-06 185705](https://github.com/user-attachments/assets/5475cb14-60cd-4b5c-aaa1-2580fb499a57)
+<br />
+
+
 <p>
 Then, create a Linux (Ubuntu) Virtual Machine, ensuring it uses the same Resource Group and Virtual Network as the Windows 10 VM. Configure authentication with the same username and password used for the Windows 10 Virtual Machine, and confirm that both VMs are within the same Virtual Network and Subnet.
 </p>
