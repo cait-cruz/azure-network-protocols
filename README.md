@@ -177,6 +177,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 ![image](https://github.com/user-attachments/assets/f4d77d33-dddf-4c14-b2dd-59f9c01bfd56)
 <br />
+<br />
 
 <h3>Lab Cleanup</h3>
 <br />
