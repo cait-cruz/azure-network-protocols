@@ -91,6 +91,10 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <p>Access the Windows 10 Virtual Machine using Remote Desktop. Once inside, install and launch Wireshark. Start a packet capture and filter for ICMP traffic.</p>
 <br />
 
+
+
+
+
 <p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM, observing the requests and replies in Wireshark. Then, open the command line or PowerShell on the Windows VM and ping a public website such as www.google.com, monitoring the ICMP traffic within Wireshark.</p>
 <br />
 
