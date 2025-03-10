@@ -10,10 +10,10 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 
 <h2>Environments and Technologies Used</h2>
 
-- Cloud Provider: Microsoft Azure
-- Tools: Wireshark, Remote Desktop, PowerShell, Command Prompt
-- Network Services: Virtual Network (VNet), Subnet, Network Security Group (NSG)
-- Various Network Protocols: SSH, RDP, DNS, ICMP, DHCP
+- <strong>Cloud Provider:</strong> Microsoft Azure
+- <strong>Tools:</strong> Wireshark, Remote Desktop, PowerShell, Command Prompt
+- <strong>Network Services:</strong> Virtual Network (VNet), Subnet, Network Security Group (NSG)
+- <strong>Various Network Protocols:</strong> SSH, RDP, DNS, ICMP, DHCP
 
 
 
@@ -179,8 +179,8 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <br />
 <br />
 
+
 <h3>Lab Cleanup</h3>
-<br />
 
 <p>Close the Remote Desktop connection to the Windows VM. In the Azure portal, delete the Resource Group that was created at the beginning of the lab. Ensure that all associated resources are removed by verifying the Resource Group deletion.</p>
 
