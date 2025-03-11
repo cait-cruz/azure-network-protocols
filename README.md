@@ -48,7 +48,7 @@ Log into the Azure Portal and navigate to "Resource Groups." Click "Create," ent
 </p>
 <br />
 
-![Screenshot 2025-03-06 174844](https://github.com/user-attachments/assets/82781fa1-3cde-45da-89d3-4235089123fa)
+![image](https://github.com/user-attachments/assets/bd198cca-1c3f-4505-818d-21b74f395102)
 <br />
 
 <p>
@@ -56,7 +56,7 @@ Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicki
 </p>
 <br />
 
-![Screenshot 2025-03-06 184220](https://github.com/user-attachments/assets/0a36de63-3e74-44ae-81f6-d2264db4cb46)
+![image](https://github.com/user-attachments/assets/f0eab0b8-9aff-46a6-93a0-72b4ba2f90aa)
 <br />
 
 ![Screenshot 2025-03-06 184242](https://github.com/user-attachments/assets/7de32a8c-7788-4b83-981c-4f726fe5e3e0)
@@ -65,7 +65,7 @@ Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicki
 ![Screenshot 2025-03-06 185036](https://github.com/user-attachments/assets/24520442-fa18-4a3e-8daa-c7364112f0f7)
 <br />
 
-![Screenshot 2025-03-06 185705](https://github.com/user-attachments/assets/5475cb14-60cd-4b5c-aaa1-2580fb499a57)
+![image](https://github.com/user-attachments/assets/f94434f2-af1c-4d67-8b26-dc10ba0440c7)
 <br />
 
 <p>
@@ -73,7 +73,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 </p>
 <br />
 
-![Screenshot 2025-03-06 190305](https://github.com/user-attachments/assets/00ac9c54-5e44-41c2-9960-71d94b9b7807)
+![image](https://github.com/user-attachments/assets/b5e56a36-56e3-478b-b1de-ae3207e51da3)
 <br />
 
 ![Screenshot 2025-03-06 190318](https://github.com/user-attachments/assets/5c3f126d-2ffd-4c10-a47a-0fceb85872f9)
@@ -82,7 +82,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 ![Screenshot 2025-03-06 190330](https://github.com/user-attachments/assets/7e7d65d2-986a-4470-be24-87308236771d)
 <br />
 
-![Screenshot 2025-03-06 190524](https://github.com/user-attachments/assets/0fb823fa-2ed1-4805-b1f0-d820640683a0)
+![image](https://github.com/user-attachments/assets/8f65d48b-d601-4a91-8e57-0084d537d756)
 <br />
 <br />
 
@@ -92,16 +92,16 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 <p>Access the Windows 10 Virtual Machine using Remote Desktop. Once inside, install and launch Wireshark. Start a packet capture and filter for ICMP traffic.</p>
 <br />
 
-![image](https://github.com/user-attachments/assets/85f8c859-9ca3-4192-b2f3-e9d312388d53)
+![image](https://github.com/user-attachments/assets/840beca6-1f89-47f9-9896-97dab608f402)
 <br />
 
-![image](https://github.com/user-attachments/assets/5b631ec1-08db-4bb6-8c99-a2605f319576)
+![image](https://github.com/user-attachments/assets/b14a3766-6c51-4763-b0d8-d25f5946bd97)
 <br />
 
 <p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM, observing the requests and replies in Wireshark.</p>
 <br />
 
-![image](https://github.com/user-attachments/assets/15b86270-bad8-46e7-a11a-218771f42df8)
+![image](https://github.com/user-attachments/assets/60c9cf6e-15b8-4301-b154-b9f9cd49db2b)
 <br />
 <br />
 
