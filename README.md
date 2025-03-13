@@ -167,6 +167,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 <p>Finally, filter for RDP traffic (tcp.port == 3389) and note the continuous data flow, as the protocol constantly transmits display updates between machines.</p>
 
+![image](https://github.com/user-attachments/assets/e016148c-6b5d-47a8-a215-7340dacd92e9)
 
 <br />
 
