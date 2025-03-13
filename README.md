@@ -88,8 +88,15 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 <br />
 
-<p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM, observing the requests and replies in Wireshark.</p>
+<p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM using <strong>Powershell</strong>, observing the requests and replies in Wireshark.</p>
 
+![image](https://github.com/user-attachments/assets/a0e5c342-99ec-47c3-9000-20d26e4e36c8)
+
+![image](https://github.com/user-attachments/assets/8be5d42e-020b-491c-b41b-a87f1ef44679)
+
+![image](https://github.com/user-attachments/assets/6309a736-101b-41ed-9aa1-9d9b9dcc732d)
+
+![image](https://github.com/user-attachments/assets/8b06dc39-3701-494c-a25a-f74440e31db9)
 
 <br />
 <br />
