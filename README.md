@@ -48,13 +48,12 @@ Log into the Azure Portal and navigate to "Resource Groups." Click "Create," ent
 
 ![image](https://github.com/user-attachments/assets/db063212-d225-43fe-a8d7-10f120b47465)
 
-<br />
 
 <p>
 Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicking "Create," and selecting "Windows 10 Pro, Version 22H2," with the size of "Standard_D2s_v3 - 2vcpus." Assign the previously created Resource Group and create a new Virtual Network (Vnet) and Subnet. Set up authentication using a username and password. 
 </p>
 
-![image](https://github.com/user-attachments/assets/26e7487d-1596-43a9-9b3e-54e88c12d487)
+![image](https://github.com/user-attachments/assets/d31fc699-bed7-418a-8cd7-89dddb257f22)
 
 ![image](https://github.com/user-attachments/assets/1b2686e3-1087-4fbb-969b-2961fac48f44)
 
@@ -62,8 +61,6 @@ Next, create a Windows 10 Virtual Machine by going to "Virtual Machines," clicki
 
 ![image](https://github.com/user-attachments/assets/128d02bd-2caa-4b8b-955e-7383da93d63b)
 
-
-<br />
 <p>
 Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensuring it uses the same Resource Group and Virtual Network as the Windows 10 VM. Set <strong>Authentication type</strong> to <strong>Password.</strong> Confirm that both VMs are within the same Virtual Network and Subnet and create.
 </p>
@@ -71,9 +68,6 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 ![image](https://github.com/user-attachments/assets/f57ecde8-c1f4-4594-86ab-460c2cb75abe)
 
 ![image](https://github.com/user-attachments/assets/ca7e791e-34a6-4fe6-ba45-fffbaf436531)
-
-
-<br />
 
 <h3>Part 2: Observing ICMP Traffic</h3>
 
@@ -89,7 +83,6 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 ![image](https://github.com/user-attachments/assets/9d3d5c3a-b382-4992-b9d8-60353c15e331)
 
-<br />
 
 <p>Retrieve the private IP address of the Ubuntu VM and attempt to ping it from the Windows 10 VM using <strong>Powershell</strong>, observing the requests and replies in Wireshark.</p>
 
@@ -99,7 +92,6 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 ![image](https://github.com/user-attachments/assets/cf43f1a6-4207-4aa3-bb19-48f2dcb32e83)
 
-<br />
 
 <h3>Part 3: Configuring a Firewall (Network Security Group)</h3>
 
@@ -131,7 +123,6 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 ![image](https://github.com/user-attachments/assets/8ec46078-0404-4a89-94cb-71774707b0f6)
 
 
-<br />
 
 <h3>Part 4: Observing Traffic Between Azure Virtual Machines</h3>
 
