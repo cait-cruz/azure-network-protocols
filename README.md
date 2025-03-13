@@ -92,8 +92,6 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 ![image](https://github.com/user-attachments/assets/a0e5c342-99ec-47c3-9000-20d26e4e36c8)
 
-![image](https://github.com/user-attachments/assets/8be5d42e-020b-491c-b41b-a87f1ef44679)
-
 ![image](https://github.com/user-attachments/assets/6309a736-101b-41ed-9aa1-9d9b9dcc732d)
 
 ![image](https://github.com/user-attachments/assets/8b06dc39-3701-494c-a25a-f74440e31db9)
@@ -105,18 +103,32 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 <p>Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.</p>
 
-
+![image](https://github.com/user-attachments/assets/ca4accbc-d69c-45e2-8235-36559584f6a7)
 
 <p>Navigate to the Network Security Group associated with the Ubuntu VM and disable inbound ICMP traffic.</p>
+
+![image](https://github.com/user-attachments/assets/d8701a00-f06d-4a05-8343-38eddcd53794)
+
+![image](https://github.com/user-attachments/assets/e14b551b-b53b-4dd0-be7b-802024b18409)
+
+![image](https://github.com/user-attachments/assets/3830e240-e2b3-489f-b95f-aad3cd754a1b)
+
+![image](https://github.com/user-attachments/assets/14ddb7a0-b118-46c2-b37b-e527ab21fe35)
 
 
 
 <p>Back in the Windows VM, observe how the ping fails and how this change is reflected in Wireshark.</p>
 
+![image](https://github.com/user-attachments/assets/97f89e34-fdb9-42a6-8b2f-faa1a4e72646)
 
   
 <p>Re-enable ICMP traffic in the Linux VM Network Security Group and confirm that the ping resumes successfully in both the command line and Wireshark.</p>
 
+![image](https://github.com/user-attachments/assets/42771371-30a3-4e38-b310-17fb64bb3070)
+
+![image](https://github.com/user-attachments/assets/b5df7366-ea7f-41f4-b62d-5fde5070ad3f)
+
+![image](https://github.com/user-attachments/assets/7eb63030-9248-41a3-b823-90684f7ea88c)
 
 <br />
 
@@ -124,18 +136,33 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 <p>Next, start a new Wireshark packet capture and filter for SSH traffic.</p>
 
+![image](https://github.com/user-attachments/assets/a9b10436-3c82-4157-b69d-bc3024e33052)
+
+![image](https://github.com/user-attachments/assets/75aa58c9-e91f-423c-b213-89c52f6ee953)
 
  
 <p>From the Windows VM, initiate an SSH connection to the Ubuntu VM using its private IP address. Enter the necessary login credentials and observe the SSH traffic in Wireshark. After testing, exit the SSH session.</p>
 
+![image](https://github.com/user-attachments/assets/eef81b1e-454d-4638-8e5b-5d2ba63c27ca)
 
+![image](https://github.com/user-attachments/assets/c7450ad9-121e-4151-9847-8f9362b8c814)
+
+![image](https://github.com/user-attachments/assets/ab63265c-af13-4f4c-9d95-021531786491)
 
 <p>Similarly, filter for DHCP traffic and renew the Windows VM’s IP address using the "ipconfig /renew" command in PowerShell, watching the DHCP requests and responses in Wireshark.</p> 
 
+![image](https://github.com/user-attachments/assets/7da8de65-22f9-428c-8936-c047aaca8512)
+
+![image](https://github.com/user-attachments/assets/d37cf2a6-d28a-4564-bea3-93d4cd2c37b9)
+
+![image](https://github.com/user-attachments/assets/dc49d446-a1a4-43cd-aafe-b32b77125a55)
 
 
 <p>Then, filter for DNS traffic and use the "nslookup" command to query domain names like "google.com" and "disney.com," observing the DNS requests and responses in Wireshark.</p>
 
+![image](https://github.com/user-attachments/assets/9f6bdc66-b400-4458-b597-fe8fb3712714)
+
+![image](https://github.com/user-attachments/assets/3a957ec9-e7c2-4ac2-a1c1-8a0ebe72a96a)
 
 
 <p>Finally, filter for RDP traffic (tcp.port == 3389) and note the continuous data flow, as the protocol constantly transmits display updates between machines.</p>
