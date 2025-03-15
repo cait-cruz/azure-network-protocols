@@ -95,7 +95,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 
 <h3>Part 3: Configuring a Firewall (Network Security Group)</h3>
 
-<p>Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM.</p>
+<p>Initiate a continuous ping from the Windows 10 VM to the Ubuntu VM using the command "ping _______ -t"</p>
 
 ![image](https://github.com/user-attachments/assets/fc5480be-4faf-4e66-a11d-758b42edd79a)
 
