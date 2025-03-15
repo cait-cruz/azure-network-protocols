@@ -114,7 +114,7 @@ Then, create a Linux (Ubuntu Server 22.04 LTS - x64 Gen2) Virtual Machine, ensur
 ![image](https://github.com/user-attachments/assets/97f89e34-fdb9-42a6-8b2f-faa1a4e72646)
 
   
-<p>Re-enable ICMP traffic in the Linux VM Network Security Group and confirm that the ping resumes successfully in both the command line and Wireshark.</p>
+<p>Re-enable ICMP traffic in the Linux VM Network Security Group and confirm that the ping resumes successfully in both the command line and Wireshark. Once confirmed, stop the continuous ping using the command "Control-C".</p>
 
 ![image](https://github.com/user-attachments/assets/3a3084de-77e5-4d13-ad32-8308cae28071)
 
